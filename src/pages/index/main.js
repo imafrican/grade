@@ -1,12 +1,8 @@
 import Vue from 'vue'
-import App from './index'
+import Index from './Index.vue'
 
-// add this to handle exception
-Vue.config.errorHandler = function (err) {
-  if (console && console.error) {
-    console.error(err)
-  }
-}
+//生成页面的实例
+const index = new Vue(Index)
 
-const app = new Vue(App)
-app.$mount()
+//挂载整个应用
+index.$mount()

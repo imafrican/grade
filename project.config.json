@@ -4,11 +4,15 @@
 		"urlCheck": true,
 		"es6": false,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
 		"checkInvalidKey": true,
-		"useCompilerModule": false
+		"useCompilerModule": true
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
