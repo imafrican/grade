@@ -1,3 +1,11 @@
 {
-    "navigationBarBackgroundColor" : "#8ed145"
+"usingComponents": {
+    "i-swipeout": "../../static/iview/swipeout/index",
+    "i-button": "../../static/iview/button/index",
+    "i-card": "../../../static/iview/card/index",
+    "i-panel":"../../../static/iview/panel/index"
+},
+
+
+    "navigationBarTitleText" : "选择课程"
 }
