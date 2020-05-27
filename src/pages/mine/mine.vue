@@ -14,7 +14,7 @@
                 </view>
             </view>
         </view>
-        <button class="button1" @tap ="chooseCourse(item.type) ">点击选课</button>
+        <button class="button1" @tap ="chooseCourse(item.type) ">删除课程</button>
         <button class="button2" @tap ="courseDetail(item.type)">查看课程</button>  
         <i-toast id="toast" /> 
     </div>
@@ -35,53 +35,65 @@ export default {
         }
         
     },
+    onPullDownRefresh(){
+        console.log("下拉刷新") //用于测试下拉刷新
+        this.created()
+        wx.stopPullDownRefresh() //调用微信停止下拉刷新的函数
+    },
+    onLoad(){
+        this.created()
+    },
     
     methods:{
+        refresh(){
+             wx.switchTab({
+        url:'../mine/main'
+      })
+        },
         
-        chooseCourse(type){ 
-           
+        chooseCourse(type){
             console.log(type);
             const db = wx.cloud.database({ env: 'choosecourse-env' })
-            db.collection('courseData').where({
+            db.collection('mycourse').where({
                 type:type
             })
             .get().then(
                 res => {
                     console.log(res.data[0])
                     let event = res.data[0]
-                    wx.cloud.callFunction({ name: 'add-course', data:event })
-            .then(
+                    wx.cloud.callFunction({ name: 'del-course', data:event })
+                    .then(
                     res => {
                         console.log(res)
                     }
                 ) 
-                $Toast({
-                content: '已加入我的课程',
-                type: 'success'
-            });
+                    $Toast({
+                        content: '已删除，请下拉刷新',
+                        type: 'success'
+                    })
+                   
                 },
             )
             
-                              
              
-            
-           
-                       
+                                 
             } ,
-        courseDetail(){
+           
+        courseDetail(type){
         let url = '/pages/courseDetail/main?type=' + type
          mpvue.navigateTo({ url })
-        }
-    } ,
-    created (type) {
+        },
+        created (type) {
         const db = wx.cloud.database({ env: 'choosecourse-env' })
-        db.collection('courseData').get().then(
+        db.collection('mycourse').get().then(
         res => {
         console.log(res.data)
         this.items = res.data
         }
         )           
     }
+    } 
+    
     
     
    
@@ -157,5 +169,4 @@ export default {
     margin-block: 10px;
     float:right;
 }
-
 </style>

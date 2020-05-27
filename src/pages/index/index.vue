@@ -1,16 +1,19 @@
 <template>
 <div class="indexcontainer">
   <img v-if="isShow" class="index_img" :src = "userInfo.avatarUrl" alt="">
-  <button class="btn" v-else open-type="getUserInfo" @getuserinfo = "getUserInfo">点击获取用户授权</button>
+  <button class="btn" v-else open-type="getUserInfo" @getuserinfo = "getUserInfo">授权登录</button>
     <p class="userName">hello {{userInfo.nickName}}</p>
   <div @tap="toChoose" class="goStudy">
     <p>点击进入</p>
+    
+    <i-toast id="toast" />
   </div>
 </div>
 
 </template>
 
 <script>
+const { $Toast } = require('../../../static/iview/base/index');
 export default {
   data(){
     return{
@@ -47,10 +50,20 @@ export default {
       this.handleGetUserInfo()
     },
     toChoose(){
-      console.log('click')
-      wx.navigateTo({
-        url:'/pages/choose/main'
+      if(this.userInfo.nickName){
+        wx.switchTab({
+        url:'../choose/main'
       })
+      }
+      else{
+        console.log('未授权')
+        $Toast({
+                content: '请点击用户授权登录',
+                type: 'warning'
+            })
+      }
+      
+      
     }
   }
 
@@ -59,7 +72,7 @@ export default {
 
 <style>
  page{
-   background: #8ed145;
+   background: #33CCCC;
  }
  .indexcontainer{
    display: flex;     /*显示布局*/ 
@@ -95,7 +108,7 @@ export default {
    text-align: center;
    font-size: 15px;
    font-style: italic;    /*文字排版--斜体*/
-   background-color: #8ed145;
+   background-color:darkcyan;
  }
 
 </style>
