@@ -1,3 +1,22 @@
 [
-    {"type":1,"img":"/static/images/1.png","content":"文字文字文字文字文字文字文字文字文字文字","url":"https://mooc1-1.chaoxing.com/course/204467369.html"}
+    {  "courseimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/1.png",
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter1.png",
+        "chaptercontent":["1.1 教学设计的概念","1.2 教学设计的主要内容","1.3 教学设计的理论基础","1.4 教学设计理论的应用","1.5 教学设计的研究动态","1.6 单元测验"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter2.png",
+        "chaptercontent":["2.1 教学目标概述","2.2 教学目标分类理论","2.3 教学目标设计","2.4 教学目标表述","2.5 单元测验"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter3.png",
+        "chaptercontent":["3.1 起点能力与学习风格分析","3.2 学习动机与自我效能感分析","3.3 单元测验"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter4.png",
+        "chaptercontent":["4.1 网络学习环境的概念","4.2 网络学习环境的特点","4.3 网络学习环境的类型","4.4 网络学习环境的构建","4.5 网络学习环境的应用","4.6 单元测验"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter5.png",
+        "chaptercontent":["5.1 网络教学资源概述","5.2 网络教学资源的基本要求","5.3 网络教学资源设计的理论依据","5.4 网络课件的设计","5.5 专题学习网站的设计","5.6 网络课程的设计","5.7 单元测验"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter6.png",
+        "chaptercontent":["6.1 教学模式与教学策略概述","6.2 常见教学模式与教学策略","6.3 单元测验"]
+    }
+
 ]

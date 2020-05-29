@@ -1,8 +1,11 @@
 {"pages": [
-    "pages/index/main",
-    "pages/choose/main",
-    "pages/mine/main",
-    "pages/courseDetail/main"
+  
+  "pages/index/main",
+  "pages/choose/main",
+  "pages/courseDetail/main",
+    
+    "pages/mine/main"
+    
     
 ],
  "window":{

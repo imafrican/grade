@@ -19,7 +19,6 @@
         <i-toast id="toast" /> 
     </div>
 </div>
-
 </template>
 
 <script>
@@ -30,14 +29,11 @@ export default {
     data(){
         return{
             items:[],
-            title:""
-
-        }
-        
+        }  
     },
     
     methods:{
-        
+
         chooseCourse(type){ 
            
             console.log(type);
@@ -50,29 +46,24 @@ export default {
                     console.log(res.data[0])
                     let event = res.data[0]
                     wx.cloud.callFunction({ name: 'add-course', data:event })
-            .then(
-                    res => {
-                        console.log(res)
-                    }
-                ) 
-                $Toast({
-                content: '已加入我的课程',
-                type: 'success'
-            });
-                },
-            )
-            
-                              
-             
-            
-           
-                       
-            } ,
-        courseDetail(){
+                    .then(
+                        res => {
+                         console.log(res)
+                        }
+                    ) 
+                    $Toast({
+                        content: '已加入我的课程',
+                        type: 'success'
+                    });
+                }
+            )            
+        } ,
+        courseDetail(type){
         let url = '/pages/courseDetail/main?type=' + type
          mpvue.navigateTo({ url })
         }
     } ,
+
     created (type) {
         const db = wx.cloud.database({ env: 'choosecourse-env' })
         db.collection('courseData').get().then(
@@ -89,19 +80,21 @@ export default {
 </script>
 
 <style>
-.head{
-    
+
+.head{ 
     display: flex;
 }
+
 .chooseContainer{
     display: flex;
     flex-direction: column;
 }
+
 .card2{
     border: 1px solid;
     border-color: darkgray;
    border-radius: 10px;
-   margin: 5px 10px;
+   margin: 5px 15px;
 }
 
 .card2 img{
@@ -111,29 +104,21 @@ export default {
     vertical-align: middle;
     border-radius: 5px;
 }
-/*.card2 button{
-    background-color:azure;
-    width: 100px;
-   height: 30px;
-   line-height: 30px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 14px;
-    margin-right: 15px;
-    margin-block: 10px;
-    
 
-}*/
 .viewContainer{
     line-height: 35px;
 }
+
 .textView{
     font-size: 13px;
     font-style:italic;
     color: darkgray;
     line-height: 20px;
 }
+
 .button1 { 
+    border: 1px solid;
+    border-color: darkgray;
     background-color:azure;
     width: 100px;
    height: 30px;
@@ -141,11 +126,12 @@ export default {
     text-align: center;
     border-radius: 10px;
     font-size: 14px;
-    margin-left:130px;
-    margin-block: 10px;
+    margin:0 0 5px 130px;
     float:left;
 }
 .button2 { 
+    border: 1px solid;
+    border-color: darkgray;
     background-color:azure;
     width: 100px;
     height: 30px;
@@ -153,8 +139,7 @@ export default {
     text-align: center;
     border-radius: 10px;
     font-size: 14px; 
-    margin-right:10px;
-    margin-block: 10px;
+    margin:0 10px 5px 0;
     float:right;
 }
 
