@@ -1,0 +1,16 @@
+[
+    {  "courseimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/4.jpg",
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter1.png",
+        "chaptercontent":["1.1 虚拟现实的基本概念","1.2 虚拟现实的分类","1.3 虚拟现实的应用领域","1.4虚拟现实的发展"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter2.png",
+        "chaptercontent":["2.1 立体显示设备","2.2 跟踪定位设备","2.3 虚拟现实声音系统与设备","2.4人机交互设备"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter3.png",
+        "chaptercontent":["3.1 立体显示设备","3.2 三维建模技术","3.3 三维虚拟声音技术","3.4人机自然交互设备","3.5 虚拟现实引擎"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter4.png",
+        "chaptercontent":["4.1 全景技术概述","4.2 全景技术常用的硬件和软件","4.3 全景图的制作"]
+    }
+
+]

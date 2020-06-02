@@ -29,13 +29,25 @@ export default {
     data(){
         return{
             items:[],
+            collectionName:""
         }  
+    },
+    mounted (){
+         wx.getStorage({
+            key: 'dbname',
+             success (res) {
+                console.log(res.data)
+            
+               
+            }
+        })
+        
     },
     
     methods:{
 
         chooseCourse(type){ 
-           
+            
             console.log(type);
             const db = wx.cloud.database({ env: 'choosecourse-env' })
             db.collection('courseData').where({

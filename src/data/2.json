@@ -1,0 +1,22 @@
+[
+    {  "courseimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/2.png",
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter1.png",
+        "chaptercontent":["1.1 第一课时","1.2 第二课时","1.3 第三课时"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter2.png",
+        "chaptercontent":["2.1 第一课时","2.2 第二课时","2.3 第三课时"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter3.png",
+        "chaptercontent":["3.1 第一课时","3.2 第二课时","3.3 第三课时"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter4.png",
+        "chaptercontent":["4.1 第一课时","4.2 第二课时","4.3 第三课时"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter5.png",
+        "chaptercontent":["5.1 第一课时","5.2 第二课时","5.3 第三课时"]
+    },{
+        "chapterimg":"cloud://choosecourse-env.6368-choosecourse-env-1302250636/images/chapter6.png",
+        "chaptercontent":["6.1 第一课时","6.2 第二课时","6.3 第三课时"]
+    }
+
+]

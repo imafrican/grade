@@ -40,7 +40,7 @@ export default {
         this.created()
         wx.stopPullDownRefresh() //调用微信停止下拉刷新的函数
     },
-    onLoad(){
+    mounted(){
         this.created()
     },
     
@@ -71,7 +71,6 @@ export default {
                         content: '已删除，请下拉刷新',
                         type: 'success'
                     })
-                   
                 },
             )
             
@@ -83,7 +82,7 @@ export default {
         let url = '/pages/courseDetail/main?type=' + type
          mpvue.navigateTo({ url })
         },
-        created (type) {
+        created () {
         const db = wx.cloud.database({ env: 'choosecourse-env' })
         db.collection('mycourse').get().then(
         res => {
