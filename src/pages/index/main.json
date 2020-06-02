@@ -2,8 +2,8 @@
    "usingComponents": {
       "i-toast":"../../../static/iview/toast/index"
   },
-   "navigationBarBackgroundColor" : "#33CCCC",
-   "navigationBarTitleText" : "首页",
+   "navigationBarBackgroundColor" :"#eee",
+   "navigationBarTitleText" : "登录",
    "navigationBarTextStyle" : "black"
    
    

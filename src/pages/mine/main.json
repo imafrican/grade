@@ -8,8 +8,9 @@
         
     },
     
-    
+    "navigationBarBackgroundColor" :"#eee",
     "navigationBarTitleText" : "我的课程",
+    "navigationBarTextStyle" : "black",
     "enablePullDownRefresh":true
 
         

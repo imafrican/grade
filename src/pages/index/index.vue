@@ -89,7 +89,7 @@ export default {
 
 <style>
  page{
-   background: #33CCCC;
+   background:#eee ;
  }
  .indexcontainer{
    display: flex;     /*显示布局*/ 
@@ -110,7 +110,8 @@ export default {
  .goStudy{
    width: 220rpx;
    height: 80rpx;
-   border: 1rpx solid #eee; /*边框为粗细1px的实线*/
+   border: 1rpx solid aliceblue;
+   background-color:aliceblue; /*边框为粗细1px的实线*/
    font-size: 24rpx;          /*字体大小*/
    line-height: 80rpx;        /*行高*/
    text-align: center;        /*段落排版居中*/
@@ -126,7 +127,7 @@ export default {
    text-align: center;
    font-size: 15px;
    font-style: italic;    /*文字排版--斜体*/
-   background-color:darkcyan;
+   background-color:aliceblue;
  }
 
 </style>

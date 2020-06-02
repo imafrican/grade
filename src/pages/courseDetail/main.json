@@ -1,3 +1,5 @@
 {
-    "navigationBarBackgroundColor" : "#236AAA"
+    "navigationBarBackgroundColor" : "#eee",
+    "navigationBarTextStyle" : "black",
+   "navigationBarTitleText" : "课程详情"
 }
